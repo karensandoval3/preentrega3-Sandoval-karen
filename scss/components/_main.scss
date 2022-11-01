@@ -1,0 +1,133 @@
+/*----MAIN----*/
+
+.hero{
+    background-image: url("../img/monica.jpg");
+    color: white;
+    font-size: 40px;
+    font-weight: 100px;
+    font-family:'Oswald', sans-serif ;
+    width: 100% ;
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        h2{
+            border: 3px solid white;
+            padding: 10px;
+        }
+    }
+}
+
+.banner{
+    /*--- revisar--- */
+    background-color: white;
+    color: white;
+    font-size: 3px;
+}
+
+main{
+    div{
+        img{
+            width: 350px; 
+            height: 450px; 
+        }
+    }
+}
+
+.ropa{
+    div{
+        a{
+            text-decoration: none;
+            background-color: palevioletred;
+            padding: 5px;  
+         }
+
+        p{
+            margin-bottom: 20px;
+        } 
+        img{
+            margin-top: 20px;
+        }
+
+
+    }
+}
+
+.imagen{
+    background-image: url(../img/flores4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+    font-weight: 100pxs;
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+    margin-block: 1%;
+    /* background-attachment: fixed;  */
+}
+
+.promo{
+    display: flex;
+    justify-content: space-evenly;
+
+    div{
+        display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+    height: 560px;
+        a{
+            text-decoration: none ;
+            background-color: palevioletred;
+            color: white;
+            padding: 5px ;
+        }
+        p{margin-bottom:20px ;
+        
+        } 
+    }
+}
+
+.grid-galeria{
+    width: 100%;
+    /* margin-top: 20px; */
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    /* grid-template-rows: 250px; */
+    gap: 10px;
+    background-color: white;
+
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+        }
+    }
+}
+
+.banner2{
+    div{
+        margin: 50px;
+        img{
+            filter: invert(100%);
+            width: 50px;
+            height: 50px;
+           }
+        p{
+            font-size: 17px;
+            color: white;
+            list-style: none;   
+        }
+    
+    }
+}
+

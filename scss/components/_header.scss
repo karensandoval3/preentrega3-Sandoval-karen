@@ -1,0 +1,50 @@
+
+
+
+/*---HEADER---*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+    top: 0;
+
+    h1{
+        color: white;
+        background-color: black;
+        font-family: 'Oswald', sans-serif;
+        font-size: 50px;
+        font-weight: 200px;
+
+        span{
+            color: rgb(236, 170, 181);
+        }
+    }
+    
+    nav{
+
+        ul{
+          background-color: black;
+          list-style: none;
+          display:flex ;
+          justify-content: space-between;
+          align-items: center;
+
+           li{
+             padding: 10px;
+              
+              a{
+                 color: white;
+                 text-decoration: none;
+                 font-size: 20px;
+               }
+           }
+        }
+
+    }
+
+
+}
+
+

@@ -61,6 +61,12 @@ header nav ul li{
     border: 3px solid white;
     padding: 10px;
 }
+.banner{
+    /*--- revisar--- */
+    background-color: white;
+    color: white;
+    font-size: 3px;
+}
 .ropa div{
     display: inline-block;
     text-align: center;
@@ -84,7 +90,7 @@ main div img{
     margin-top: 20px;
 }
 .imagen{
-    background-image: url(../img/new\ collection.jpg);
+    background-image: url(../img/flores4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +100,8 @@ main div img{
     height: 100vh;
     text-align: center;
     font-size: 50px;
-    background-attachment: fixed; 
+    margin-block: 1%;
+    /* background-attachment: fixed;  */
 }
 .promo div{
     display: inline-block;
@@ -120,12 +127,12 @@ main div img{
 
 .grid-galeria{
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: grid;
     grid-template-columns: repeat( 3, 1fr);
     /* grid-template-rows: 250px; */
-    gap: 15px;
-    background-color: black;
+    gap: 10px;
+    background-color: white;
 
 }
 
@@ -134,8 +141,33 @@ main div img{
     height: 100%;
     object-fit: cover;
 }
-.img-e{
-    
+.banner2{
+    margin-top:  10px;
+    background-color: black;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /*CORRER ICONOS*/ 
+  
+}
+.banner2 div{
+   margin: 50px;
+}
+.banner2 div img{
+    filter: invert(100%);
+    width: 50px;
+    height: 50px;
+}
+.banner2 div p{
+    font-size: 17px;
+    color: white;
+    list-style: none;
+
+}
+.mapas{
+   
 }
 .fixed{
     position: fixed;
@@ -165,8 +197,14 @@ footer ul li a{
     text-transform: uppercase;
     color: black;
     list-style: none;
+    text-decoration: none;
     
 }
+/*---Media Queries---*/
+@media screen and (max-width: 768px){
+    .grid-galeria{
+        grid-template-columns: 1fr
 
-
+    }
+}
 

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+.fixed{
+    position: fixed;
+    right: 3%;
+    bottom: 15%;
+    background-color: palevioletred;
+    font-size: 25px;
+    text-align: center;
+    width:150px ;
+    height:100px ;
+    border-radius: 100%;
+    box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
+
+    div{
+        margin-top: 50px;
+    }
+}
+

@@ -1,0 +1,23 @@
+
+
+/*---FOOTHER---*/
+
+footer{
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    ul{
+       li{
+          a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            list-style: none;
+            text-decoration: none;
+
+           }
+
+         }    
+     } 
+}
