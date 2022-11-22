@@ -1,63 +1,86 @@
-/*----MAIN----*/
-
 .hero{
     background-image: url("../img/monica.jpg");
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 100px;
-    font-family:'Oswald', sans-serif ;
-    width: 100% ;
-    height: 90vh;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;  
-    background-attachment: fixed; 
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
 
+
     div{
+        text-align: center;
+        font-size: 40px;
         h2{
             border: 3px solid white;
             padding: 10px;
+            
         }
+        
     }
 }
 
 .banner{
-    /*--- revisar--- */
+
     background-color: white;
     color: white;
     font-size: 3px;
 }
 
-main{
+.grid-galeria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 10px;
+    background-color: white;
     div{
         img{
-            width: 350px; 
-            height: 450px; 
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
         }
     }
-}
 
-.ropa{
+}
+.banner2{
+    margin-top:  10px;
+    background-color: black;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
     div{
-        a{
-            text-decoration: none;
-            background-color: palevioletred;
-            padding: 5px;  
-         }
+        margin: 50px;
+        align-items: center;
+        text-align: center;
+        
+       img{
 
-        p{
-            margin-bottom: 20px;
-        } 
-        img{
-            margin-top: 20px;
+        filter: invert(100%);
+        width: 50px;
+        height: 50px;
         }
+       p{
+        font-size: 17px;
+        color: white;
+        list-style: none;
 
-
-    }
+       }
+       a{
+        text-decoration: none;
+       }
+            
+  }
 }
+
 
 .imagen{
     background-image: url(../img/flores4.jpg);
@@ -66,68 +89,97 @@ main{
     background-size: cover;
     color: white;
     font-size: 30px;
-    font-weight: 100pxs;
     height: 100vh;
     text-align: center;
     font-size: 50px;
-    margin-block: 1%;
-    /* background-attachment: fixed;  */
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
 }
 
-.promo{
-    display: flex;
-    justify-content: space-evenly;
-
+.ropa{
     div{
         display: inline-block;
-    text-align: center;
-    margin: 20px;
-    border: 2px solid black;
-    height: 560px;
+        text-align: center;
+        margin: 20px;
+        height: 560px;
+        margin-left: 50px;
+        font-family: 'Oswald', sans-serif;
+        img{
+            width: 350px; 
+            height: 450px;
+        }
         a{
-            text-decoration: none ;
-            background-color: palevioletred;
-            color: white;
-            padding: 5px ;
+            text-decoration: none;
+            background-color: rgb(247, 180, 191);
+            padding: 5px;
+            color: black;
+            border-radius: 10%;
+            box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.16); 
+            -moz-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.16); 
+            -webkit-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.16);  
         }
-        p{margin-bottom:20px ;
-        
-        } 
-    }
-}
-
-.grid-galeria{
-    width: 100%;
-    /* margin-top: 20px; */
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr);
-    /* grid-template-rows: 250px; */
-    gap: 10px;
-    background-color: white;
-
-    div{
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;  
-        }
-    }
-}
-
-.banner2{
-    div{
-        margin: 50px;
-        img{
-            filter: invert(100%);
-            width: 50px;
-            height: 50px;
-           }
         p{
-            font-size: 17px;
-            color: white;
-            list-style: none;   
+            margin-bottom: 20px; 
         }
-    
+    }
+
+}
+ section{
+    .card{
+        .card-title{
+            font-size: 80px;
+           color: white;
+           font-family:'Oswald', sans-serif ;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 200px;
+           text-decoration: overline;
+
+        }
+    }
+ }
+section{
+    .info-2{
+        font-family: 'Oswald', sans-serif;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        margin-top: 35px;
+       h3{
+        font-family: 'Oswald', sans-serif;
+        text-decoration: overline;
+     }
+    }
+}
+section{
+    .informacion{
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+}
+section{
+    .form{
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        margin-left: 30px;
+        .form-1{
+            margin-bottom: 10px;
+        }
+    }
+}
+section{
+    .mapas{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        .mapa-1,.mapa-2{
+            margin-right: 15px;
+        }
     }
 }
 

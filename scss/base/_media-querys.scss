@@ -1,7 +1,58 @@
-/*---Media Queries---*/
-@media screen and (max-width: 768px){
-    .grid-galeria{
-        grid-template-columns: 1fr
+/*CELULAR*/
+@media screen and (max-width:412px) {
+
+    header,
+    footer {
+
+        flex-direction: column;
+    }
+
+    .banner2 {
+        padding: 10px;
+
 
     }
+
+    .banner2 div {
+        margin: 1px;
+    }
+
+    .card-title {
+        text-decoration: none;
+    }
+
+    .mapas {
+        display: inline-block;
+        margin-left: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    .mapa-2 {
+        margin-top: 20px;
+    }
+
+    .info-2 h3 {
+        text-decoration: none;
+    }
+
+
+}
+
+/*TABLET*/
+
+@media screen and (max-width:768px) and (min-width:413px) {
+    header {
+        background-color: black;
+    }
+
+    .ropa div {
+        margin-left: 190px;
+    }
+
+    .mapa-1,
+    .mapa-2 {
+        margin: 20px;
+    }
+
 }

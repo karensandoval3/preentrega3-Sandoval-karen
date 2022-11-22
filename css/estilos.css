@@ -3,23 +3,26 @@
   margin: 0%;
   padding: 0%; }
 
+.fixed-2 {
+  position: fixed;
+  right: 0%;
+  bottom: 40%;
+  font-size: 35px;
+  text-align: center;
+  width: 150px;
+  height: 100px;
+  border-radius: 100%; }
+
 .fixed {
   position: fixed;
-  right: 3%;
-  bottom: 15%;
-  background-color: palevioletred;
+  right: 0%;
+  bottom: 25%;
   font-size: 25px;
   text-align: center;
   width: 150px;
   height: 100px;
-  border-radius: 100%;
-  box-shadow: 10px 10px 29px -1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 29px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 29px -1px rgba(0, 0, 0, 0.75); }
-  .fixed div {
-    margin-top: 50px; }
+  border-radius: 100%; }
 
-/*---HEADER---*/
 header {
   display: flex;
   justify-content: space-between;
@@ -48,15 +51,14 @@ header {
         text-decoration: none;
         font-size: 20px; }
 
-/*----MAIN----*/
 .hero {
   background-image: url("../img/monica.jpg");
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 100px;
   font-family: 'Oswald', sans-serif;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,30 +66,51 @@ header {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .hero div h2 {
-    border: 3px solid white;
-    padding: 10px; }
+  .hero div {
+    text-align: center;
+    font-size: 40px; }
+    .hero div h2 {
+      border: 3px solid white;
+      padding: 10px; }
 
 .banner {
-  /*--- revisar--- */
   background-color: white;
   color: white;
   font-size: 3px; }
 
-main div img {
-  width: 350px;
-  height: 450px; }
+.grid-galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: white; }
+  .grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
-.ropa div a {
-  text-decoration: none;
-  background-color: palevioletred;
-  padding: 5px; }
-
-.ropa div p {
-  margin-bottom: 20px; }
-
-.ropa div img {
-  margin-top: 20px; }
+.banner2 {
+  margin-top: 10px;
+  background-color: black;
+  gap: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Oswald', sans-serif; }
+  .banner2 div {
+    margin: 50px;
+    align-items: center;
+    text-align: center; }
+    .banner2 div img {
+      filter: invert(100%);
+      width: 50px;
+      height: 50px; }
+    .banner2 div p {
+      font-size: 17px;
+      color: white;
+      list-style: none; }
+    .banner2 div a {
+      text-decoration: none; }
 
 .imagen {
   background-image: url(../img/flores4.jpg);
@@ -96,68 +119,122 @@ main div img {
   background-size: cover;
   color: white;
   font-size: 30px;
-  font-weight: 100pxs;
   height: 100vh;
   text-align: center;
   font-size: 50px;
-  margin-block: 1%;
-  /* background-attachment: fixed;  */ }
-
-.promo {
+  margin-top: 1%;
   display: flex;
-  justify-content: space-evenly; }
-  .promo div {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    border: 2px solid black;
-    height: 560px; }
-    .promo div a {
-      text-decoration: none;
-      background-color: palevioletred;
-      color: white;
-      padding: 5px; }
-    .promo div p {
-      margin-bottom: 20px; }
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif; }
 
-.grid-galeria {
-  width: 100%;
-  /* margin-top: 20px; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 250px; */
-  gap: 10px;
-  background-color: white; }
-  .grid-galeria div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+.ropa div {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  height: 560px;
+  margin-left: 50px;
+  font-family: 'Oswald', sans-serif; }
+  .ropa div img {
+    width: 350px;
+    height: 450px; }
+  .ropa div a {
+    text-decoration: none;
+    background-color: #f7b4bf;
+    padding: 5px;
+    color: black;
+    border-radius: 10%;
+    box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.16); }
+  .ropa div p {
+    margin-bottom: 20px; }
 
-.banner2 div {
-  margin: 50px; }
-  .banner2 div img {
-    filter: invert(100%);
-    width: 50px;
-    height: 50px; }
-  .banner2 div p {
-    font-size: 17px;
-    color: white;
-    list-style: none; }
+section .card .card-title {
+  font-size: 80px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  text-decoration: overline; }
 
-/*---FOOTHER---*/
+section .info-2 {
+  font-family: 'Oswald', sans-serif;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  margin-top: 35px; }
+  section .info-2 h3 {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: overline; }
+
+section .informacion {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 80px;
+  margin-left: 40px; }
+
+section .form {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 30px; }
+  section .form .form-1 {
+    margin-bottom: 10px; }
+
+section .mapas {
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+  section .mapas .mapa-1, section .mapas .mapa-2 {
+    margin-right: 15px; }
+
 footer {
-  background-color: rgba(0, 0, 0, 0.404);
+  background-color: black;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
-  footer ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    list-style: none;
-    text-decoration: none; }
+  align-items: center;
+  color: white;
+  font-family: 'Oswald', sans-serif; }
+  footer .caja-1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px; }
+    footer .caja-1 .redes {
+      margin: 25px; }
+      footer .caja-1 .redes img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px; }
+  footer .derechos p {
+    margin-top: 60px; }
 
-/*---Media Queries---*/
-@media screen and (max-width: 768px) {
-  .grid-galeria {
-    grid-template-columns: 1fr; } }
+/*CELULAR*/
+@media screen and (max-width: 412px) {
+  header,
+  footer {
+    flex-direction: column; }
+  .banner2 {
+    padding: 10px; }
+  .banner2 div {
+    margin: 1px; }
+  .card-title {
+    text-decoration: none; }
+  .mapas {
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 20px; }
+  .mapa-2 {
+    margin-top: 20px; }
+  .info-2 h3 {
+    text-decoration: none; } }
+
+/*TABLET*/
+@media screen and (max-width: 768px) and (min-width: 413px) {
+  header {
+    background-color: black; }
+  .ropa div {
+    margin-left: 190px; }
+  .mapa-1,
+  .mapa-2 {
+    margin: 20px; } }

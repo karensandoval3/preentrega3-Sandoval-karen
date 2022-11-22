@@ -5,22 +5,25 @@
     padding: 0%;
 
 }
-.fixed{
+
+.fixed-2{
     position: fixed;
-    right: 3%;
-    bottom: 15%;
-    background-color: palevioletred;
-    font-size: 25px;
+    right: 0%;
+    bottom: 40%;
+    font-size: 35px;
     text-align: center;
     width:150px ;
     height:100px ;
     border-radius: 100%;
-    box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
-
-    div{
-        margin-top: 50px;
-    }
+    
 }
-
+.fixed{
+    position: fixed;
+    right: 0%;
+    bottom: 25%;
+    font-size: 25px;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    border-radius: 100%; 
+}

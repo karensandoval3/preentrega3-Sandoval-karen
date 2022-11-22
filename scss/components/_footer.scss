@@ -1,23 +1,32 @@
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
 
+  .caja-1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
 
-/*---FOOTHER---*/
+    .redes {
+      margin: 25px;
 
-footer{
-    background-color: rgba(0, 0, 0, 0.404);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;  
-    ul{
-       li{
-          a{
-            text-decoration: none;
-            text-transform: uppercase;
-            color: black;
-            list-style: none;
-            text-decoration: none;
+      img {
+        // filter: invert(100%);
+        width: 50px;
+        height: 50px;
+       margin-right: 20px;
+      }
+    }
 
-           }
+  }
 
-         }    
-     } 
+    .derechos {
+      p {
+       margin-top: 60px;
+      }
+  }
 }

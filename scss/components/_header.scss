@@ -1,7 +1,5 @@
+@import"../base/variables";
 
-
-
-/*---HEADER---*/
 header{
     display: flex;
     justify-content: space-between;
@@ -12,15 +10,16 @@ header{
 
     h1{
         color: white;
-        background-color: black;
+        background-color: $color-principal;
         font-family: 'Oswald', sans-serif;
         font-size: 50px;
         font-weight: 200px;
 
         span{
-            color: rgb(236, 170, 181);
+            color: $color-secundario;
         }
     }
+
     
     nav{
 
